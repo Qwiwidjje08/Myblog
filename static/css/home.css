@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    background-color: #201E43;
+}
+.mycontainer{
+    text-align: right;
+
+}
+
+.maincontainer{
+    margin: 100px 200px;
+    padding:100px 100px;
+    background-color: #FEF3E2;
+}
+
+button{
+    background: #D6BD98;
+    color: #1A3636;
+}
+
+.logo{
+    width: 280px;
+    height: 200px;
+}
+

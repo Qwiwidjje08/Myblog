@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<section class="text-gray-400 bg-gray-900 body-font">
+    
+    <div class="images">
+       
+      <div class="flex flex-wrap -m-4">
+        {% for blog in blogs %}
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+          </a>
+          <div class="mt-4">
+            {% if blog.image1 %}
+                 <p><img src="{{blog.image1.url}}" alt=""></p>
+                 <h2 class="text-white title-font text-lg font-medium">{{blog.author}}</h2><h2>{{blog.pub_date}}</h2>
+            <p class="mt-1">{{blog.text}}</p>
+            <h1>{{blog.title}}</h1>
+            {% else %}
+                 <p></p>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </section>
+{% endblock %}
